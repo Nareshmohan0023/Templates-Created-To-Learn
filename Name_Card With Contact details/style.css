@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(255, 203, 203);
+}
+.img1 {
+  width: 120px;
+  height: 80px;
+  border-radius: 50%;
+}
+h1 {
+  font-family: "Playwrite BE VLG", cursive;
+  display: inline-block;
+  position: relative;
+  top: -25px;
+  color: rgb(255, 177, 177);
+  padding-left: 25px;
+}
+center {
+  background-color: rgb(16, 44, 87);
+  /* margin: 30px; */
+  padding-top: 20px;
+  border-radius: 7px;
+}
+.Cards-Container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  gap: 30px;
+  margin-right: 290px;
+  margin-left: 100px;
+}
+.sideimg {
+  height: 900px;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 400px;
+
+  /* width: 300px; */
+}
+.cards {
+  width: 250px;
+  height: 400px;
+  background-color: rgb(22, 121, 171);
+  margin: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(16, 44, 87);
+
+  /* justify-content: center; */
+  /* justify-content: center;*/
+}
+.cardimg {
+  width: 100px;
+  align-self: center;
+  margin-top: 20px;
+  background-color: rgb(16, 44, 87);
+  border-radius: 100%;
+  border: 3px solid rgb(255, 177, 177);
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.cardname {
+  font-family: "Cabin", sans-serif;
+  font-size: 28px;
+  color: #071952;
+  font-weight: 600;
+}
+.skill {
+  font-size: 20px;
+  color: #071952;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.skill:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(255, 177, 177);
+}
+.about {
+  align-self: flex-start;
+  padding-left: 33px;
+  font-size: 20px;
+  color: #071952bd;
+  font-family: "Cabin", sans-serif;
+  position: relative;
+  top: -29px;
+  text-align: left;
+}
+.contact img {
+  width: 50px;
+  padding-top: 0;
+  /* margin-top: -30px; */
+  margin-right: 30px;
+  margin-left: 30px;
+  position: relative;
+  top: -10px;
+  border-radius: 12px;
+  border: 3px solid rgb(255, 177, 177);
+}
+.lstcards {
+  width: 250px;
+  height: 400px;
+  background-color: rgb(22, 121, 171);
+  margin: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 70px;
+  bottom: 0;
+  border: 5px solid rgb(16, 44, 87);
+}
+.contact img:hover {
+  border: 3px solid #ff3333;
+  border-color: #ff3333; /* Brighter or darker border color */
+  /* transform: scale(1.05); */
+}
+.lstcards img {
+}

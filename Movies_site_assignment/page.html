@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a>PrimeVideo</a>
+        <a>Home  </a>
+        <a>Store </a>
+        <a>LiveTV </a>
+        <a>Categories <img src="./assets/icons/down-chevron.png"> </a>
+      </div>
+      <div class="navbarright">
+        <img class="searchbar" src="./assets/icons/search_8872289.png" />
+        <a>Naresh</a>
+        <img class="user" src="./assets/icons/user_12483574.png" />
+      </div>
+    </header>
+    <div class="main-container">
+    
+      <div class="marqmovies">
+        <marquee  scrollamount="6"  id="marqposters">
+          <div class="posters">
+            <div class="poster-wrapper">
+              <img class="marqimg" src="./assets/images/moviep1.jpeg" />
+            </div>
+            <div class="poster-wrapper">
+              <img class="marqimg" src="./assets/images/moviep2.jpeg" />
+            </div>
+            <div class="poster-wrapper">
+              <img class="marqimg" src="./assets/images/moviep3.jpeg" />
+            </div>
+            <div class="poster-wrapper">
+              <img class="marqimg" src="./assets/images/moviep4.jpeg" />
+            </div>
+            <div class="poster-wrapper">
+              <img class="marqimg" src="./assets/images/moviep5.jpeg" />
+            </div></div
+        ></marquee>
+      </div>
+    </div>
+    <div class="whitedots">
+      <button style="background-color: aliceblue;">&nbsp</button>
+      <button>&nbsp</button><button>&nbsp</button><button>&nbsp</button><button>&nbsp</button><button>&nbsp</button><button>&nbsp</button><button>&nbsp</button><button>&nbsp</button>
+    </div>
+    <div class="continuewatchng">
+      <p style="font-size: 20px">Continue Watching</p>
+      <div class="leftarrow"><img src="./assets/icons/left-arrow.png"></div>
+
+      <div class="movieslist1">
+        <!-- <img src="./assets/images/moviepp1.jpeg" />
+        <img src="./assets/images/moviepp2.jpeg" /> -->
+        <img src="./assets/images/moviepp3.jpeg" />
+        <img src="./assets/images/moviepp4.jpeg" />
+        <img src="./assets/images/moviepp5.jpeg" />
+        <img src="./assets/images/moviepp6.jpeg" />
+        <img src="./assets/images/moviepp7.jpeg" />
+        <img src="./assets/images/moviepp8.jpeg" />
+        <!-- <img src="./assets/images/moviepp9.jpeg" /> -->
+
+      </div>
+      <div class="rightarrow"><img src="./assets/icons/left-arrow.png"></div>
+
+    </div>
+    <br>
+      <div class="sciencefiction">
+        <p style="font-size: 20px"><span style="color: rgb(8, 92, 156);">Prime</span> Science fiction TV</p>
+        <div class="movieslist1">
+          <!-- <img src="./assets/images/moviepp1.jpeg" />
+          <img src="./assets/images/moviepp2.jpeg" /> -->
+          <img src="./assets/images/moviepp3.jpeg" />
+          <img src="./assets/images/moviepp4.jpeg" />
+          <img src="./assets/images/moviepp5.jpeg" />
+          <img src="./assets/images/moviepp6.jpeg" />
+          <img src="./assets/images/moviepp7.jpeg" />
+          <img src="./assets/images/moviepp8.jpeg" />
+          <!-- <img src="./assets/images/moviepp9.jpeg" /> -->
+        </div>
+        <footer >
+          <div><img  src="./assets/icons/amazon-prime-video-seeklogo.svg" alt=""></div>
+          <div class="text"><span>Terms and Privacy Notice</span>
+          <span>Send us feedback</span>
+        <span>Help</span>
+      <p>&#169;1996-2024,Amazon.com,incorp its affilates.</p></div>
+        </footer>
+   
+    <script>
+      const marq = document.getElementById("marqposters");
+      const elements = document.getElementsByClassName("marqimg");
+      // const elements = document.getElementsByClassName("posters");
+
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].onmouseover = function () {
+          marq.stop();
+        };
+
+        elements[i].onmouseleave = function () {
+          marq.start();
+        };
+      }
+    </script>
+  </body>
+</html>

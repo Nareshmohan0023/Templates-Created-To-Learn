@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Render</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title Section -->
+    <div class="title">
+      <h1>Video Render</h1>
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="5"
+        loop="infinite"
+      >
+        <div class="marquee-video">
+          <video controls>
+            <source src="./videos/Video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="marquee-video">
+          <video controls>
+            <source src="./videos/Video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="marquee-video">
+          <video controls>
+            <source src="./videos/Video3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="marquee-video">
+          <video controls>
+            <source src="./videos/video4.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="marquee-video">
+          <video controls>
+            <source src="./videos/video5.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </marquee>
+    </div>
+
+    <!-- Autoplay Video Section -->
+    <div class="autoplay-section">
+      <div class="column">
+        <video autoplay muted loop>
+          <source src="./videos/Video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay muted loop>
+          <source src="./videos/video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay muted loop>
+          <source src="./videos/video3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay muted loop>
+          <source src="./videos/video4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay muted loop>
+          <source src="./videos/video5.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

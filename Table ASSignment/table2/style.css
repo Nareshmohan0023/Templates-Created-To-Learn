@@ -1,0 +1,51 @@
+body {
+  background-image: url(./funky-background.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container {
+  width: 60%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+td,
+th {
+  border: 1px solid rgb(242, 216, 216);
+  text-align: center;
+  padding: 15px;
+  font-size: 28px;
+}
+/* td {
+  font-weight: normal;
+}
+th {
+  font-family: 900;
+} */
+button {
+  padding: 10px 28px;
+  border: none;
+}
+p {
+  font-size: 25px;
+}
+h1 {
+  font-size: 40px;
+}
+table tr {
+  background-color: #742d0ae4; /* Light gray */
+}
+
+/* Change background color of odd rows */
+table tr:nth-child(odd) {
+  background-color: #067571b8; /* Slightly darker gray */
+}

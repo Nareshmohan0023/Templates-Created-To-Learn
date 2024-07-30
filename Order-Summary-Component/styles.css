@@ -1,0 +1,83 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./Assets/pattern-background-desktop.svg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-size: 100% auto; /* Prevents the image from repeating */
+  /* background-position: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+.main-container {
+  width: 450px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+  /* height: 90%; */
+}
+.img1 {
+  /* border-top-left-radius: 15px; /* Match the container's border radius */
+  /* border-top-right-radius: 15px; */
+}
+p {
+  padding-left: 70px;
+  padding-right: 70px;
+  color: hsl(224, 23%, 55%);
+}
+.annualplan {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: hsl(225, 100%, 98%);
+  margin: 35px;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+}
+.anplanandpris {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  position: relative;
+  left: -45px;
+}
+.icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  height: 50%;
+  position: relative;
+  bottom: -10px;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dollar {
+  position: relative;
+  bottom: 15px;
+}
+.annualplanfont {
+  position: relative;
+  top: 15px;
+}
+button {
+  background-color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  border-radius: 9px;
+  color: aliceblue;
+  padding: 15px;
+  border: none;
+  width: 340px;
+  /* margin-top: -20px;
+  display: block; */
+}
+.hov p:hover {
+  cursor: pointer;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

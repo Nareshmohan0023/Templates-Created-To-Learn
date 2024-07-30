@@ -1,0 +1,179 @@
+body {
+  background-color: rgb(26, 23, 23);
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  position: absolute;
+}
+header {
+  background-color: rgb(26, 23, 23);
+  border-radius: 9px;
+  color: aliceblue;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  z-index: 1020;
+}
+.navbar a {
+  margin-left: 20px;
+}
+.navbar a img {
+  width: 20px;
+  position: relative;
+  top: 4px;
+  transition: transform 0.3s ease-in-out;
+  /* padding-left: 2px; */
+}
+.navbarright {
+  display: flex;
+  gap: 10px;
+}
+.navbarright a {
+  position: relative;
+  top: 4px;
+}
+/* .navbar a:hover {
+  transform: rotate(180deg);
+} */
+.navbar a img:hover {
+  transform: rotate(180deg);
+}
+.user {
+  width: 30px;
+  background-color: rgb(105, 166, 212);
+  padding: 2px;
+  border-radius: 50%;
+}
+.searchbar {
+  width: 35px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.marqmovies {
+  width: 90%;
+  background-color: rgb(26, 23, 23);
+  padding: 30px 20px;
+  margin: auto;
+}
+.whitedots {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* background-color: ; */
+}
+.whitedots button {
+  border-radius: 50%;
+  width: 8px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(213, 214, 216, 0.756);
+}
+.whitedots button:hover {
+  background-color: aliceblue;
+}
+.posters {
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+}
+.poster-wraper {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.posters img {
+  /* margin-left: 40px; */
+  height: 252px;
+  width: 450px;
+  cursor: pointer;
+}
+
+/* .marqimg:hover {
+  border-radius: 9px;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  padding: 5px;
+} */
+.movieslist1 {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  margin: auto;
+}
+.continuewatchng {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+.leftarrow img {
+  width: 40px;
+  position: absolute;
+  left: 9px;
+  bottom: 700px;
+  cursor: pointer;
+}
+.rightarrow img {
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 700px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.movieslist1 img:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  transform: scale(1.1);
+}
+.movieslist1 img {
+  position: relative;
+  overflow: hidden;
+}
+.sciencefiction {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  background-color: rgb(26, 23, 23);
+  width: 250px;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+span:hover {
+  cursor: pointer;
+}
+span {
+  color: rgb(56, 158, 236);
+}
+p:hover {
+  cursor: context-menu;
+}
+footer .text {
+  display: flex;
+  gap: 20px;
+  margin-top: -40px;
+  align-items: center;
+}
+.text span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(8, 92, 156);
+}
