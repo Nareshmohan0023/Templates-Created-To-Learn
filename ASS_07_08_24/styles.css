@@ -1,0 +1,381 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+  height: 80px; /* Fixed header height */
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between logo and nav */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin: 0; /* Remove default margin for proper alignment */
+  font-size: 1.8rem; /* Slightly larger font size for better visibility */
+  white-space: nowrap; /* Prevent logo text from wrapping */
+}
+
+nav {
+  display: flex; /* Flexbox for horizontal alignment */
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(
+      rgba(128, 128, 128, 0.5),
+      rgba(128, 128, 128, 0.5)
+    ),
+    url("./images/young-women-enjoying-bachelorette-party.jpg") no-repeat top
+      center/cover;
+
+  height: calc(100vh - 80px); /* Full viewport height minus header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  /* margin-top: 80px; Avoid overlapping with sticky header */
+}
+
+.hero-content {
+  max-width: 600px; /* Limit max width for better readability */
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+
+/* About Section Styles */
+.about {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Products Section Styles */
+.products {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #ffd700;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.product-item .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Added margin bottom */
+}
+
+.product-item .btn:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Login and Signup Form Styles */
+.login,
+.signup {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.login h2,
+.signup h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.login-form,
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login-form label,
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input,
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form .btn,
+.signup-form .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .btn:hover,
+.signup-form .btn:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+footer ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    height: auto; /* Adjust height for wrapped content */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align navigation items to the left */
+    width: 100%; /* Full width for stacked items */
+    margin-top: 10px; /* Add spacing between logo and navigation */
+  }
+
+  nav ul li {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .hero-content {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .product-item {
+    flex: 1 1 100%; /* Full width for products on small screens */
+  }
+}
