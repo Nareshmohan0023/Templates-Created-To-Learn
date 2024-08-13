@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+}
+/* font-family: "Roboto", sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+}
+.background-container {
+  background-image: url(./assets/Premium\ Vector\ _\ Black\ wide\ technology\ background.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 3rem 9.6rem;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.767);
+  color: rgb(199, 202, 205);
+  margin-bottom: 9.6rem;
+  z-index: 10;
+}
+.Header-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.Header-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.2rem;
+  color: rgb(131, 135, 140);
+  padding-bottom: 2px;
+}
+.Header-nav ul li a:focus {
+  border-bottom: 3px solid rgb(87, 219, 107);
+  transition: ease 0.3ms;
+  /* box-shadow: inset 3px solid rgb(87, 219, 107); */
+}
+.sitename {
+  font-size: 3rem;
+  cursor: pointer;
+}
+footer {
+  background-color: black;
+  /* padding: 3.2rem auto; */
+}
+.social i {
+  font-size: 1.8rem;
+  color: aliceblue;
+  padding: 1rem;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline;
+  cursor: pointer;
+}
+.social i:hover {
+  background-color: rgb(87, 219, 107);
+}
+.social {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 2rem;
+}
+hr {
+  height: 1px;
+  width: 88%;
+  margin: 2rem auto;
+  border-top: 1px solid grey;
+  border: none;
+  background-color: #a8a5a5;
+}
+.Index-footer {
+  padding: 30px 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-icons {
+  display: flex;
+  color: #212020;
+  gap: 2rem;
+}
+.footer-icons i {
+  background-color: rgb(87, 219, 107);
+  font-size: 2.1rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.footer-icons i:hover {
+  cursor: pointer;
+  background-color: rgb(47, 148, 62);
+  transition: background-color 0.3s;
+}
+.Index-footer h2 {
+  font-size: 4.6rem;
+  color: aliceblue;
+}
+.Index-footer p {
+  color: rgb(191, 186, 186);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.f-highlight {
+  color: rgb(87, 219, 107);
+}
+p {
+  letter-spacing: 1.2px;
+  /* word-spacing: 1.2px; */
+}
