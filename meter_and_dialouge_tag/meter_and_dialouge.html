@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter and Dialog Assignment</title>
+    <style>
+      /* General body styling */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 400px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #444;
+      }
+
+      /* Styling for the meter */
+      .meter-container {
+        margin-bottom: 20px;
+      }
+
+      meter {
+        width: 100%;
+        height: 20px;
+        margin-top: 10px;
+      }
+
+      .output-text {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+
+      /* Styling for buttons */
+      .button-group {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Dialog styling */
+      dialog {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        width: 300px;
+      }
+
+      dialog h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      dialog p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      /* Close button for the dialog */
+      dialog button {
+        background-color: #dc3545;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      dialog button:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meter and Dialog Example</h1>
+
+      <!-- Meter Example -->
+      <div class="meter-container">
+        <label for="progressMeter">Progress:</label>
+        <meter
+          id="progressMeter"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="100"
+          value="50"
+        ></meter>
+        <p class="output-text" id="outputText">Medium</p>
+      </div>
+
+      <!-- Buttons to adjust the meter value -->
+      <div class="button-group">
+        <button onclick="adjustMeter(-10)">Decrease</button>
+        <button onclick="adjustMeter(10)">Increase</button>
+      </div>
+
+      <!-- Dialog Example -->
+      <button id="openDialogBtn">Open Dialog</button>
+      <dialog id="infoDialog">
+        <h2>Information</h2>
+        <p>This is a simple dialog box.</p>
+        <button id="closeDialogBtn">Close</button>
+      </dialog>
+    </div>
+
+    <!-- Script to handle meter adjustments and dialog -->
+    <script>
+      const meter = document.getElementById("progressMeter");
+      const outputText = document.getElementById("outputText");
+      const dialog = document.getElementById("infoDialog");
+      const openDialogBtn = document.getElementById("openDialogBtn");
+      const closeDialogBtn = document.getElementById("closeDialogBtn");
+
+      // Function to adjust the meter value
+      function adjustMeter(valueChange) {
+        let newValue = meter.value + valueChange;
+        newValue = Math.max(meter.min, Math.min(newValue, meter.max));
+        meter.value = newValue;
+        updateOutputText(newValue);
+      }
+
+      // Function to update the output text based on meter value
+      function updateOutputText(value) {
+        if (value < meter.low) {
+          outputText.textContent = "Low";
+          outputText.className = "output-text low";
+        } else if (value < meter.high) {
+          outputText.textContent = "Medium";
+          outputText.className = "output-text medium";
+        } else {
+          outputText.textContent = "High";
+          outputText.className = "output-text high";
+        }
+      }
+
+      // Event listeners to open and close the dialog
+      openDialogBtn.addEventListener("click", () => {
+        dialog.showModal();
+      });
+
+      closeDialogBtn.addEventListener("click", () => {
+        dialog.close();
+      });
+
+      // Initialize output text based on the initial meter value
+      updateOutputText(meter.value);
+    </script>
+  </body>
+</html>
