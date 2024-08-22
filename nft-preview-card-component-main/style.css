@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  padding: 100px;
+
+  background-color: hsl(217, 54%, 11%);
+}
+.container {
+  background-color: hsl(216, 50%, 16%);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  border-radius: 13px;
+}
+
+.image-cont {
+  height: 50%;
+  width: 100%;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 13px;
+  overflow: hidden;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  /* padding: 0 20px; */
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: hsl(215, 51%, 70%);
+}
+h1 {
+  font-size: 3.2rem;
+  color: hsl(0, 0%, 100%);
+  display: inline;
+  width: fit-content;
+}
+h1:hover {
+  cursor: pointer;
+  color: cyan;
+  transition: 0.5;
+}
+/* li {
+  display: flex;
+  gap: 10px;
+} */
+.image-cont img {
+  position: absolute;
+  /* height: 100%;
+  width: 100%; */
+
+  object-fit: cover;
+  top: 43%;
+  right: 43%;
+  /* display: none; */
+}
+.content {
+  color: hsl(215, 51%, 70%);
+  font-size: 2rem;
+}
+.bg-color {
+  background-color: rgba(0, 255, 255, 0.34);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.fst-lst-itm {
+  color: cyan;
+}
+.image-cont:hover div {
+  display: block;
+  transition: all 0.3s;
+}
+.footer-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-cont img {
+  width: 10%;
+  padding: 1px;
+  background-color: hsl(215, 51%, 70%);
+  border-radius: 50%;
+}
+hr {
+  padding: 1.5px;
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.small-txt {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.name:hover {
+  color: cyan;
+}
