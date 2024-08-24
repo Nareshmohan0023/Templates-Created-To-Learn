@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Designs</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas Designs</h1>
+    <canvas id="canvas1" width="200" height="200"></canvas>
+    <canvas id="canvas2" width="200" height="200"></canvas>
+    <canvas id="canvas3" width="200" height="200"></canvas>
+    <canvas id="canvas4" width="200" height="200"></canvas>
+    <canvas id="canvas5" width="200" height="200"></canvas>
+
+    <script>
+      // Design 1: Circle with a Quadratic Curve
+      const canvas1 = document.getElementById("canvas1");
+      const ctx1 = canvas1.getContext("2d");
+
+      // Circle
+      ctx1.beginPath();
+      ctx1.arc(100, 100, 50, 0, 2 * Math.PI);
+      ctx1.strokeStyle = "blue";
+      ctx1.stroke();
+
+      // Quadratic curve
+      ctx1.beginPath();
+      ctx1.moveTo(50, 150);
+      ctx1.quadraticCurveTo(100, 50, 150, 150);
+      ctx1.strokeStyle = "green";
+      ctx1.stroke();
+
+      // Design 2: Intersecting Rectangles and Lines
+      const canvas2 = document.getElementById("canvas2");
+      const ctx2 = canvas2.getContext("2d");
+
+      // Rectangles
+      ctx2.fillStyle = "red";
+      ctx2.fillRect(20, 20, 80, 80);
+      ctx2.fillStyle = "yellow";
+      ctx2.fillRect(60, 60, 80, 80);
+
+      // Lines
+      ctx2.beginPath();
+      ctx2.moveTo(0, 0);
+      ctx2.lineTo(200, 200);
+      ctx2.moveTo(200, 0);
+      ctx2.lineTo(0, 200);
+      ctx2.strokeStyle = "black";
+      ctx2.stroke();
+
+      // Design 3: Circle and Rectangle Overlap
+      const canvas3 = document.getElementById("canvas3");
+      const ctx3 = canvas3.getContext("2d");
+
+      // Rectangle
+      ctx3.fillStyle = "lightblue";
+      ctx3.fillRect(50, 50, 100, 100);
+
+      // Circle
+      ctx3.beginPath();
+      ctx3.arc(100, 100, 60, 0, 2 * Math.PI);
+      ctx3.fillStyle = "orange";
+      ctx3.fill();
+
+      // Design 4: Zigzag Line with Quadratic Curves
+      const canvas4 = document.getElementById("canvas4");
+      const ctx4 = canvas4.getContext("2d");
+
+      // Zigzag line
+      ctx4.beginPath();
+      ctx4.moveTo(20, 20);
+      ctx4.lineTo(60, 60);
+      ctx4.lineTo(20, 100);
+      ctx4.lineTo(60, 140);
+      ctx4.lineTo(20, 180);
+      ctx4.strokeStyle = "purple";
+      ctx4.stroke();
+
+      // Quadratic curves
+      ctx4.beginPath();
+      ctx4.moveTo(80, 20);
+      ctx4.quadraticCurveTo(120, 100, 80, 180);
+      ctx4.quadraticCurveTo(40, 100, 80, 20);
+      ctx4.strokeStyle = "brown";
+      ctx4.stroke();
+
+      // Design 5: Concentric Circles and Rectangles
+      const canvas5 = document.getElementById("canvas5");
+      const ctx5 = canvas5.getContext("2d");
+
+      // Concentric circles
+      ctx5.beginPath();
+      ctx5.arc(100, 100, 20, 0, 2 * Math.PI);
+      ctx5.arc(100, 100, 40, 0, 2 * Math.PI);
+      ctx5.arc(100, 100, 60, 0, 2 * Math.PI);
+      ctx5.strokeStyle = "green";
+      ctx5.stroke();
+
+      // Concentric rectangles
+      ctx5.strokeRect(80, 80, 40, 40);
+      ctx5.strokeRect(60, 60, 80, 80);
+      ctx5.strokeRect(40, 40, 120, 120);
+      ctx5.strokeStyle = "blue";
+      ctx5.stroke();
+    </script>
+  </body>
+</html>
