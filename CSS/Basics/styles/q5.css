@@ -1,0 +1,25 @@
+.combination {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.combination h1 {
+  padding: 10px;
+  color: rgb(242, 109, 109);
+  background-color: white;
+}
+
+.combination p {
+  padding: 10px;
+  color: rgb(146, 241, 151);
+  background-color: rgb(40, 126, 56);
+}
+
+.combination div h1 {
+  color: rgb(228, 186, 14);
+  background-color: rgb(40, 126, 56);
+}
+.combination div p {
+  color: rgb(133, 206, 237);
+  background-color: rgb(40, 126, 56);
+}

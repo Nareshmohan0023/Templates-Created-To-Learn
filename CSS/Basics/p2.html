@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        font-size: 3.2rem;
+        padding: 20px 32px;
+        background-color: black;
+        color: white;
+        border-radius: 11px;
+        display: inline;
+      }
+      h2 {
+        font-size: 3.2rem;
+        padding: 20px 32px;
+        background-color: rgb(237, 20, 20);
+        color: white;
+        border-radius: 11px;
+        display: inline;
+      }
+      /* to access a class we need to put . in front */
+      .card {
+        padding: 3.2rem;
+        background-color: black;
+        color: aliceblue;
+        width: fit-content;
+        margin-top: 3.2rem;
+        border-radius: 11px;
+        box-shadow: 0px 3px 2px rgb(178, 176, 176);
+        border-bottom: 5px solid white;
+      }
+      .card:hover {
+        background-color: red;
+        cursor: pointer;
+        color: aliceblue;
+      }
+      /* by using parent element we acn style childs vby accesing them or inherit them */
+      .card h1:hover {
+        transform: scale(1.1);
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to aplly styles</h1>
+    <ul>
+      <li>inline css (using style attribute)</li>
+
+      <li>internal css (using style tag in head)</li>
+
+      <li>external css (using .css file)</li>
+    </ul>
+    <hr />
+    <h1>Example for internal css</h1>
+    <h2>THis is heading tag</h2>
+    <h3>THis is heading tag</h3>
+    <div class="card">
+      <h1>this is a card</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad sit beatae,
+        id pariatur veritatis inventore optio quis a nam atque, provident cum
+        tempora dolorem.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+h3 {
+  font-size: 3.2rem;
+  padding: 20px 32px;
+  background-color: black;
+  color: white;
+  border-radius: 11px;
+  display: inline;
+}
+h2 {
+  font-size: 3.2rem;
+  padding: 20px 32px;
+  background-color: rgb(237, 20, 20);
+  color: white;
+  border-radius: 11px;
+  display: inline;
+}
+/* to access a class we need to put . in front */
+.card {
+  padding: 3.2rem;
+  background-color: black;
+  color: aliceblue;
+  width: 500px;
+  margin-top: 3.2rem;
+  border-radius: 11px;
+  box-shadow: 0px 3px 2px rgb(178, 176, 176);
+  border-bottom: 5px solid white;
+}
+.card:hover {
+  background-color: red;
+  cursor: pointer;
+  color: aliceblue;
+}
+/* by using parent element we acn style childs vby accesing them or inherit them */
+.card h1:hover {
+  transform: scale(1.1);
+  color: aqua;
+}

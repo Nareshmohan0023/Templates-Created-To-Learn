@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: green;
+      }
+      #heading-two-tag {
+        color: rgb(104, 173, 234);
+      }
+      .h2tag {
+        color: red;
+      }
+      .container {
+        color: greenyellow;
+        font-size: 20px;
+        background-color: grey;
+        padding: 20px;
+        font-style: italic;
+      }
+      a[href] {
+        background-color: red;
+        display: block;
+        width: 300px;
+        font-size: 3.2rem;
+        margin-bottom: 1.2rem;
+      }
+      a[href="./p1.html"] {
+        background-color: aqua;
+      }
+      a[download] {
+        color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Elements eelectors</h1>
+    <ul>
+      <li>using element name</li>
+      <li>using element ID</li>
+      <li>using class</li>
+      <li>using attribute and its value</li>
+    </ul>
+    <hr />
+    <h1>Using element name</h1>
+    <hr />
+    <h2 id="heading-two-tag">using elementid</h2>
+    <hr />
+    <h2 class="h2tag">using class</h2>
+    <hr />
+    <div class="container">
+      <div class="child">
+        <p>hello</p>
+      </div>
+    </div>
+    <a href="./p1.html" target="_blank">hello</a>
+    <a href="./p2.html" target="_parent">hello</a>
+    <a href="./p3.html" target="_self" download="./p1.html">hello</a>
+  </body>
+</html>

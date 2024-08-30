@@ -1,0 +1,21 @@
+table {
+  border: 2px solid black;
+  empty-cells: hide;
+  /* background-color: red; */
+  /* border-collapse: collapse; */
+  font-size: 2.4rem;
+  outline: none;
+}
+th {
+  background-color: aqua;
+}
+
+td {
+  background-color: beige;
+  border: 1px solid black;
+  padding: 20px 40px;
+  text-align: center;
+}
+tr {
+  /* margin-top: 10px; */
+}

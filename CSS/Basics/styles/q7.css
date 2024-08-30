@@ -1,0 +1,19 @@
+.card ~ * {
+  margin-bottom: 20px;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.card img {
+  overflow: hidden;
+  border-radius: 11px;
+}
+.card img + h1 {
+  color: blue;
+}
+.card img + h1 + p {
+  color: blueviolet;
+}
+.card img ~ h1 {
+  background-color: blue;
+}
