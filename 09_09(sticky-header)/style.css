@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: rgba(242, 194, 136, 0.881);
+    position: sticky;
+    top: 0;
+    margin-bottom: 3.2rem;
+    z-index: 999;
+
+}
+.header-right{
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.header-right ul{
+    display: flex;
+    gap: 3.2rem;
+    font-size: 2.1rem;
+    list-style: none;
+}
+.header-right ul li{
+    font-size: inherit;
+    
+}
+.header-right ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transition: 0.3s;
+
+}
+
+a:link,a:visited{
+    font-size: 2.8rem;
+    background-color: rgb(111, 67, 8);
+    color: aliceblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 11px;
+}
+
+a:hover,a:active{
+    background-color: rgba(237, 164, 69, 0.96);
+    color: rgb(111, 67, 8);
+    transition: 0.4s;
+}
+
+h2{
+    font-size: 3.6rem;
+
+}
+
+p{
+    font-size: 2.4rem;
+    padding: 15px 20px;
+    background-color: rgb(229, 190, 162);
+    color: #444;
+    width: fit-content;
+    margin: 20px ;
+    border-radius: 9px;
+
+}
+
+.three-c{
+    height: 144rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.three-c div{
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    border-radius: 3px;
+
+
+}
+.three-c div:nth-child(1){
+    background-color: beige;
+    left: 500px;
+    top: 100px;
+    transition:ease-in-out 3s;
+
+}
+.three-c div:nth-child(2){
+    background-color:rgb(247, 199, 141);
+    left: 620px;
+    top: 170px;
+    
+}
+.three-c div:nth-child(3){
+    background-color: rgb(189, 68, 68);
+    left: 740px;
+    top: 240px;
+}
+.three-c div:nth-child(1):hover{
+    z-index: 99;
+}
+.three-c div:nth-child(2):hover{
+    z-index: 99;
+}
+.three-c div:nth-child(3):hover{
+    z-index: 99;
+}
+
+.three-c div:nth-child(1):hover ~ div:nth-child(2){
+    transform: translateX(170px);
+    transition: 2s;
+}
+.three-c div:nth-child(1):hover ~ div:nth-child(3){
+    transform: translate(-375px,-50px);
+    
+    transition: 2s;
+}
+
+
+/* .three-c div:nth-child(2):hover ~ div:nth-child(1){
+    transform: translateX(170px);
+    transition: 2s;
+    background-color: red;
+} */
+.three-c div:nth-child(2):hover ~ div:nth-child(3){
+    transform: translate(-300px,-20px);
+    
+    transition: 2s;
+}
+
+
+.three-c div:nth-child(3):hover ~ div:nth-child(2){
+    transform: translateX(20px);
+    transition: 2s;
+}
+/* (while hovering third i need to move first and second) */
