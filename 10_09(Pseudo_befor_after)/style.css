@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-size: 4.6rem;
+    color: rgb(239, 123, 80);
+    text-decoration: underline;
+    text-decoration-color:orangered ;
+    text-underline-offset: 10px;
+
+}
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 9.6rem;
+    margin-bottom: 9.6rem;
+    gap: 12.4rem;
+}
+.element{
+    background-color: rgb(151, 249, 249);
+    width: 70rem;
+    height: 20.6rem;
+}
+
+.element_one{
+    background-color: rgb(151, 249, 249);
+    width: 70rem;
+    height: 20.6rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.speaking_content{
+    font-size: 1.4rem;
+    background-color:rgb(165, 201, 242);
+    padding: 10px;
+    width: 70%;
+    position: relative;
+    margin: 30px;
+}
+
+.speaking_content::before{
+    content: "";
+    width: 9rem;
+    height: 9rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    left: -110px;
+    top: -40px;
+    background-image: url(./assets/girlimg.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.speaking_content::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    /* background-color: red; */
+    border-left: 15px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 40px solid rgb(165, 201, 242);
+    transform: rotate(-86deg);
+    left: -25px;
+    top: -13px;
+
+}
+.element_two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element_two button {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    padding: 0; /* No padding since it's handled differently */
+    background: linear-gradient(to right, rgb(208, 105, 105), yellow, black);
+    border-radius: 90px; /* Full border radius */
+    border: none; /* Remove default border */
+}
+
+.element_two button::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background: white; /* Inner background color */
+    border-radius: 90px; /* Match the outer radius */
+    z-index: 5; /* Ensure it appears above the background gradient */
+}
+.element_two button::after{
+    content: "";
+    background:linear-gradient( black,rgb(243, 243, 182));
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    border-radius: 50%;
+    top: 50%;
+    left: 15px;
+    transform: translatey(-50%);
+}
+.element_two button:hover::after{
+    transform: translate(60px,-50%);
+    transition: 1s;
+}
+
+.element_three{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element_three .card{
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    content: "";
+    z-index: 2;
+    /* overflow: hidden; */
+    
+}
+.element_three .card::after{
+    content: "";
+    background-color: yellow;
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -30px;
+    top: 5px;
+    z-index: 6;
+    border-radius: 10px 0 0 0;
+    
+}
+.element_three .card::before{
+    content: "";
+    background-color: rgb(0, 4, 255);
+    width: 90px;
+    height: 10px;
+    position: absolute;
+    transform: rotate(132deg);
+    right: 24px;
+    top: 11px;
+    border-radius: 0px 0px 0 20px;
+    z-index: 4;
+}
+
+
+ /* .tag{
+    width: 150px;
+    height: 30px;
+    transform: rotate();
+    background-color: red;
+    z-index: ;
+ } */
