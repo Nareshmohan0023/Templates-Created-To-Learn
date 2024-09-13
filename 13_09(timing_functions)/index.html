@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Timing Functions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .transition-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Shared Box Style */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50;
+      border-radius: 5px;
+      transition: width 1s, height 1s;
+    }
+
+    .box:hover {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* Ease Timing */
+    .ease {
+      transition-timing-function: ease;
+    }
+
+    /* Ease-in Timing */
+    .ease-in {
+      transition-timing-function: ease-in;
+    }
+
+    /* Ease-out Timing */
+    .ease-out {
+      transition-timing-function: ease-out;
+    }
+
+    /* Ease-in-out Timing */
+    .ease-in-out {
+      transition-timing-function: ease-in-out;
+    }
+
+    /* Linear Timing */
+    .linear {
+      transition-timing-function: linear;
+    }
+
+    /* Cubic-bezier Timing for Custom Transition */
+    .cubic-bezier {
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .label {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Transition Timing Functions</h1>
+
+  <div class="transition-container">
+
+    <!-- Ease Transition -->
+    <div>
+      <div class="box ease"></div>
+      <p class="label">Ease</p>
+    </div>
+
+    <!-- Ease-in Transition -->
+    <div>
+      <div class="box ease-in"></div>
+      <p class="label">Ease-in</p>
+    </div>
+
+    <!-- Ease-out Transition -->
+    <div>
+      <div class="box ease-out"></div>
+      <p class="label">Ease-out</p>
+    </div>
+
+    <!-- Ease-in-out Transition -->
+    <div>
+      <div class="box ease-in-out"></div>
+      <p class="label">Ease-in-out</p>
+    </div>
+
+    <!-- Linear Transition -->
+    <div>
+      <div class="box linear"></div>
+      <p class="label">Linear</p>
+    </div>
+
+    <!-- Custom Cubic-bezier Transition -->
+    <div>
+      <div class="box cubic-bezier"></div>
+      <p class="label">Cubic-bezier</p>
+    </div>
+
+  </div>
+</body>
+</html>
