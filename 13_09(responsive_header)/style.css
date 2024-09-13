@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #e0f7fa;
+    border-bottom: 2px solid #00acc1;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #00838f;
+  }
+  
+  .logo-name {
+    font-size: 1.2rem;
+    color: #00838f;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s,border-radius 0.3s;
+  }
+.logsign{
+    display: flex;
+    align-items: center;
+    gap: 10px !important;
+}
+  
+  /* Hover and Focus Effects for Navigation Items */
+  .nav-items a:hover,
+  .nav-items a:focus {
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn {
+    background-color: #4dd0e1;
+    color: white;
+  }
+  
+  .signup-btn {
+    background-color: #00796b;
+    color: white;
+  }
+  
+  .login-btn:hover {
+    background-color: #00acc1;
+  }
+  
+  .signup-btn:hover {
+    background-color: #004d40;
+  }
+  header div:last-child{
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+  }
+  
+  /* Responsive Styles */
+  /* Mobile Styles (less than 600px) */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .nav-items {
+      display: none; /* Hide navigation on mobile */
+    }
+  
+    .auth-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  /* Tablet Styles (600px - 900px) */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .header {
+      flex-direction: row;
+    }
+  
+    .nav-items {
+      gap: 15px;
+    }
+  
+    .auth-buttons {
+      gap: 5px;
+    }
+  }
+  
+  /* Desktop Styles (more than 900px) */
+  @media (min-width: 900px) {
+    .nav-items {
+      display: flex;
+    }
+  
+    .nav-items a {
+      font-size: 1rem;
+    }
+  }
+  
