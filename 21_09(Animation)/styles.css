@@ -1,0 +1,139 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #fff;
+  animation: slideDown 2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 15px;
+  opacity: 0;
+  animation: fadeInText 3s ease-out forwards;
+}
+
+.scroll-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #fff;
+  color: #ff4e50;
+}
+
+/* Content Section */
+.content-section {
+  height: 100vh;
+  width: 100vw;
+  background: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1.5s 1.5s forwards ease-in;
+}
+
+.animated-btn {
+  padding: 15px 40px;
+  background-color: #ff4e50;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.animated-btn:hover {
+  background-color: #f9d423;
+  transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
