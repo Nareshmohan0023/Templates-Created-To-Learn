@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 412px) {
+  section {
+    position: relative;
+  }
+  video {
+    width: 100%;
+    filter: brightness(40%);
+  }
+  header {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 2.4rem;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    margin-top: 6.4rem;
+  }
+  .contents-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .search-container input {
+    font-size: 2.1rem;
+    padding: 10px 20px;
+    width: 75%;
+    border-radius: 11px;
+    outline: none;
+    border: none;
+  }
+  button {
+    font-size: 2.4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 11px;
+    transform: translateY(3px);
+  }
+  button:active {
+    transform: translateY(1px);
+  }
+  .search {
+    padding: 10px;
+    font-weight: 900;
+    background-color: pink;
+    cursor: pointer;
+    border-radius: 11px;
+    color: rgb(54, 15, 54);
+  }
+  p {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .watch {
+    padding: 10px;
+    font-weight: 700;
+    background-color: pink;
+    cursor: pointer;
+    border-radius: 11px;
+    color: rgb(48, 14, 48);
+    width: 100%;
+    margin-top: 4.6rem;
+  }
+}
