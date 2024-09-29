@@ -1,0 +1,144 @@
+.div1{
+    display: flex;
+    flex-direction: column;
+}
+.div2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: rgb(56, 68, 103);
+    padding: 2px;
+    margin: 3px;
+    border: 2px solid rgb(56, 68, 103);
+    border-radius: 5px;
+}
+.img1{
+    position: relative;
+    left: 24px;
+    width: 10%;
+}
+.h1{
+    position: relative;
+    left: 50px;
+    color: #c88ecf;
+}
+.h51{
+    position: relative;
+    right: 120px;
+    top: 70px;
+    padding: 20px;
+    margin: 2px;
+}
+.button1{
+    padding: 3px;
+    width: 80px;
+    background-color: rgb(99, 126, 144);
+    border: 1px solid rgb(99, 126, 144);
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.img2{
+    width: 90%;
+    height: 900px;
+    position: relative;
+    left: 60px;
+    bottom: 3px;
+}
+.div3{
+    display: flex;
+
+}
+.div3{
+    background-image: url(./imd/pexels-lucaspezeta-2398354.jpg);
+    height: 700px;
+    background-size: cover;
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    bottom: 4px;
+
+}
+.h12{
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 20%;
+    font-size: 260%;
+}
+.p1{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 27%;
+    font-size: 210%;
+}
+.input1{
+    width: 500%;
+    position: relative;   
+    right: 850.2px;
+    top: 410px;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 50px;
+
+}
+.input1::placeholder{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.button2{
+    padding: 16px;
+    width: 100%;
+    position: relative;
+    right: 289.1px;
+    top: 410px;
+    border: 1px solid rgb(56, 68, 103);
+    background-color: rgb(56, 68, 103) ;
+    color: white;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.div4{
+    display: flex;
+    flex-direction: row;
+}
+.span1{
+    color: rgb(56, 68, 103);
+    margin: 10px;
+    font-weight: bold;
+    font-size: 200%;
+    margin-left: 150px;
+}
+.button3{
+    padding: 20px;
+}
+marquee img{
+    width: 30%;
+    height: 38%;
+    background-color: rgb(56, 68, 103) ;
+    margin: 5px;
+
+}
+.img123:hover{
+    border:2px solid  rgb(56, 68, 103) ;
+    border-radius: 2px;
+    transform: scale(1.1);
+    z-index: 10;
+    transition: ease-in-out 0.5s;
+}
+.cc2{
+    color: white;
+    position: relative;
+    top: 140px;
+    font-size: larger;
+}
+.cls2{
+     color:white;
+
+}
+.non1{
+    display: flex;
+    flex-direction: column;
+}
