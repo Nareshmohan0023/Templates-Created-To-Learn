@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tooltip Example</title>
     <style>
-        /* Tooltip container */
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+      }
 
-        /* Tooltip text */
-        .tooltip .tooltip-text {
-            visibility: hidden;
-            width: 140px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 8px;
-            border-radius: 6px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%; /* Position tooltip above the element */
-            left: 50%;
-            margin-left: -70px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
+      /* Tooltip text */
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 140px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 8px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -70px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
 
-        /* Tooltip arrow */
-        .tooltip .tooltip-text::after {
-            content: "";
-            position: absolute;
-            top: 100%; /* Arrow at the bottom of tooltip */
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #333 transparent transparent transparent;
-        }
+      /* Tooltip arrow */
+      .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+      }
 
-        /* Show the tooltip text when hovering */
-        .tooltip:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
+      /* Show the tooltip text when hovering */
+      .tooltip:hover > .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
 
-        /* Style for container and other elements */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+      /* Style for container and other elements */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        display: flex;
+        gap: 2.4rem;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-        img {
-            width: 150px;
-            height: auto;
-        }
+      img {
+        width: 150px;
+        height: auto;
+      }
 
-        p {
-            font-size: 18px;
-        }
+      p {
+        font-size: 18px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Button with tooltip -->
     <div class="tooltip">
-        <button>Hover me!</button>
-        <span class="tooltip-text">This button submits the form.</span>
+      <button>Hover me!</button>
+      <span class="tooltip-text">This button submits the form.</span>
     </div>
-
-    <br><br>
 
     <!-- Image with tooltip -->
     <div class="tooltip">
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-        <span class="tooltip-text">This is a sample image.</span>
+      <img src="./img.avif" alt="Placeholder Image" />
+      <span class="tooltip-text">This is a sample image.</span>
     </div>
-
-    <br><br>
 
     <!-- Paragraph with tooltip -->
     <div class="tooltip">
-        <p>This is a paragraph with some text.</p>
-        <span class="tooltip-text">Additional info about this text.</span>
+      <p>This is a paragraph with some text.</p>
+      <span class="tooltip-text">Additional info about this text.</span>
     </div>
-
-</body>
+  </body>
 </html>
