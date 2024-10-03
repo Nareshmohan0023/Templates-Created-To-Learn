@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.diamond {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+  z-index: 1;
+}
+.diamond2 {
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+  top: 0px;
+  position: absolute;
+  transform: rotateX(90deg) translateX(0px) translateY(125px) translateZ(125px);
+  transform-style: preserve-3d;
+}
+.diamond3 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(24, 226, 212);
+  top: 0px;
+  position: absolute;
+  transform: rotateX(90deg) rotateZ(180deg) translateX(0px) translateY(125px)
+    translateZ(125px);
+  transform-style: preserve-3d;
+}
+.diamond4 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(27, 223, 43);
+  left: 0px;
+  position: absolute;
+  transform: rotateZ(90deg) translateX(50px) translateY(0px) rotateY(-45deg)
+    translateZ(125px);
+  transform-style: preserve-3d;
+}
+.diamond5 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(215, 43, 204);
+  left: 0px;
+  position: absolute;
+  transform: rotateZ(90deg) translateX(50px) translateY(0px) rotateY(45deg)
+    translateZ(-125px);
+  transform-style: preserve-3d;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(45deg) rotateX(0deg); /* Include initial rotation */
+  }
+  to {
+    transform: rotate(45deg) rotateX(360deg) rotateY(360deg); /* 3D continuous rotation */
+  }
+}
