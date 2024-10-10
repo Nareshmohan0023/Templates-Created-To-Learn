@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(204, 204, 204);
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  background-color: rgb(237, 239, 241);
+  margin: 5% 15%;
+  border-radius: 11px;
+  height: 80%;
+  display: flex;
+  padding: 30px;
+}
+
+.left {
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.204), rgba(255, 255, 255, 0.179)),
+    url(./6106718.jpg) no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  border-radius: 11px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  gap: 30px;
+}
+.part {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.step_info {
+  display: flex;
+  flex-direction: column;
+}
+.step_info .step {
+  color: rgb(162, 160, 160);
+}
+.step_info .info {
+  color: rgb(211, 209, 209);
+}
+.circle {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+.right div {
+}
+.right div h1 {
+  font-size: 2.4rem;
+}
+.right div p {
+  color: gray;
+}
+.right form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.right form input {
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 0;
+  box-shadow: 3px 3px 3px solid black;
+}
+.right button {
+  align-self: flex-end;
+  padding: 10px 15px;
+  background-color: rgb(66, 66, 126);
+  color: white;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
