@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./media.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75553_logo-new.svg"
+          alt="please wait"
+        />
+
+        <button class="toggle-btn" onclick="togglenav()">
+          <i class="fa-solid fa-bars" id="toggle"></i>
+        </button>
+      </div>
+      <nav id="nav">
+        <div>
+          <button class="outline-btn">Contact</button>
+          <a href="#">Find iobs</a>
+        </div>
+
+        <button class="solid-btn">Post a job</button>
+      </nav>
+    </header>
+
+    <section class="container1">
+      <h1 class="heading">
+        The #1 job board for <br />
+        software development
+      </h1>
+
+      <div class="cards1-container">
+        <div class="card1">
+          <div class="profile">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75551_company-05.png"
+              alt=""
+            />
+            <p class="subtitle text-gray">Company XYZ</p>
+          </div>
+
+          <p class="subtitle">
+            ”One of the main advantages of posting jobs on Devtask is the skill
+            level of the applicants. Some of the best talents in our team were
+            found here.”
+          </p>
+
+          <p class="text-gray">John Wick, CTO</p>
+
+          <br />
+
+          <p>Results</p>
+          <hr />
+
+          <div class="info">
+            <div>
+              <h2>3-4x faster</h2>
+              <p class="text-gray">to find our talents</p>
+            </div>
+
+            <div>
+              <h2>3-4x faster</h2>
+              <p class="text-gray">to find our talents</p>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="profile">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75552_tommy.png"
+              alt=""
+            />
+            <p class="subtitle text-gray">Tommy Abha</p>
+          </div>
+
+          <p class="subtitle">
+            ”Using Devtalk lead me to amazing freelancing gigs and ultimately to
+            a dream job at a major tech company.”
+          </p>
+
+          <p class="text-gray">iOS developer at RockCode</p>
+
+          <br />
+
+          <p>Results</p>
+          <hr />
+
+          <div class="info">
+            <div>
+              <h2>+40</h2>
+              <p class="text-gray">freelancing gigs</p>
+            </div>
+
+            <div>
+              <h2>1</h2>
+              <p class="text-gray">full-time hiring</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container2">
+      <h2>Featured Jobs</h2>
+      <div class="S-2Card_conatiner">
+        <div class="cards c-1">
+          <img
+            src="https://cdn.prod.website-files.com/66e9839528db1d093c7c83a9/66e98a940b581015b5f0b357_company-01.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company XY . Full-time</p>
+          <h3 class="role">Senior iOS Developer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag">
+              <p>New York,USA</p>
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards c-2">
+          <img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75516_company-05.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company XY . Full-time</p>
+          <h3 class="role">Senior Full Stack Developer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag">
+              <p>New York,USA</p>
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards c-3">
+          <img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75517_company-06.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company MN . Full-time</p>
+          <h3 class="role">AI/ML Engineer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag">
+              <p>San Francisco,USA</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards c-4">
+          <img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75513_company-02.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company BB . Full-time</p>
+          <h3 class="role">Android/Klotin Developer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag">
+              <p>Quebec, CA</p>
+              <p>remote</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards c-5">
+          <img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75515_company-04.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company JG . Full-time</p>
+          <h3 class="role">Flutter Application Developer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag">
+              <p>Dulbin,IR</p>
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards c-6">
+          <img
+            src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75514_company-03.png"
+            alt="logo"
+          />
+          <p class="ligth-text">Company XY . Full-time</p>
+          <h3 class="role">Senior C# Developer</h3>
+          <div class="tags">
+            <div class="red tag"><p>In the spotlight</p></div>
+            <div class="green tag"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container3">
+      <h2>Recent</h2>
+      <div class="cardcontainer">
+        <div class="left">
+          <div class="card c-1">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75518_company-07.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company AQ .Freelancer</p>
+                <h2>React Native Mobile Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-2">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75519_company-08.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company LK .Full-time</p>
+                <h2>Senior Jvascript eveloper</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-3">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551a_company-09.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company PD .Part-time</p>
+                <h2>Python Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-4">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551b_company-10.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company AQ . Internship</p>
+                <h2>PHP Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-5">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551c_company-11.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company IU .Full-time</p>
+                <h2>Senior Web Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-6">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551d_company-12.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company OB .Freelancer</p>
+                <h2>Java Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-7">
+            <div>
+              <img src="" alt="" />
+              <div>
+                <p class="ligthtext">Company SS .Freelancer</p>
+                <h2>Software Engineer(c++)</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-8">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551f_company-14.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company KW .Full-time</p>
+                <h2>Swift UI Developer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="card c-9">
+            <div>
+              <img
+                src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75521_company-16.png"
+                alt=""
+              />
+              <div>
+                <p class="ligthtext">Company FF .Full-time</p>
+                <h2>AWS Full Stack Engineer</h2>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="blue tag">
+                <p>Sep 8,2024</p>
+              </div>
+              <div class="green tag">
+                <p>San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p>
+            Work with the most talented and accomplished developers on a
+            freelance, contract, part-time, or full-time basis.
+          </p>
+          <a class="btn" href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const icon = document.getElementById("toggle");
+      const nav = document.getElementById("nav");
+      var isOpen = false;
+      function togglenav() {
+        // isOpen = !isOpen;
+
+        if (isOpen == true) {
+          isOpen = false;
+          icon.classList.remove("fa-close");
+          icon.classList.add("fa-bars");
+          nav.style.display = "none";
+        } else {
+          isOpen = true;
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-close");
+          nav.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
