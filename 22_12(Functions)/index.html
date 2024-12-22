@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <ol>
+      <li>Greatest Among Two</li>
+      <li>Greatest Among Three</li>
+      <li>Find if it is a Leap Year or Not</li>
+    </ol>
+    <div>
+      <h2>1)Find Largest</h2>
+      <input type="number" id="q1n1" placeholder="Enter First Number " />
+      <input id="q1n2" type="number" placeholder="Enter Second Number " />
+      <button onclick="Greatest_A_2()">Check!</button>
+      <p class="result">Ans:<span id="ans1"></span></p>
+    </div>
+    <div>
+      <h2>2)Find Largest</h2>
+      <input id="q2n1" type="number" placeholder="Enter First Number " />
+      <input id="q2n2" type="number" placeholder="Enter Second Number " />
+      <input id="q2n3" type="number" placeholder="Enter Third Number " />
+      <button onclick="Greatest_A_3()">Check!</button>
+      <p class="result">Ans:<span id="ans2"></span></p>
+    </div>
+    <div id="cont_3">
+      <h2>3)Find is it Leap Year</h2>
+      <input id="q3year" type="text" placeholder="Enter Year" />
+      <button onclick="Is_Leap_Year()">Check!</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
